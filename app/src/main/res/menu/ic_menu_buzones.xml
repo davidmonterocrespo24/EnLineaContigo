@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Search / will display always -->
+
+    <item android:id="@+id/buzones_todos"
+        android:icon="@drawable/ic_check_box_black_24dp"
+        android:title=""
+        app:showAsAction="always"
+        android:checkable="true"
+        android:visible="false"
+        />
+
+    <item android:id="@+id/buzones_eliminar"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title=""
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/enviar_todos"
+        android:icon="@drawable/ic_unarchive_black_24dp"
+        android:title=""
+        app:showAsAction="always"
+        />
+
+
+</menu>

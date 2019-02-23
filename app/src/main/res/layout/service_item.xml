@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="5dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:id="@+id/service_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner_buzones">
+
+    <ImageView
+        android:id="@+id/service_icon"
+        android:src="@drawable/consultar_saldo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textSize="25dp"
+        android:text="Consultar Saldo"
+        android:textColor="#000000"
+        android:id="@+id/service_name"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

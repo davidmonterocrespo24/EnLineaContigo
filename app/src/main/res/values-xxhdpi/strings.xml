@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">En línea Contigo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="envio_quejas">Enviar vía:</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="queja">Mi opinión</string>
+    <string name="sugerencia">Opinión</string>
+    <string name="tema_caliente">Tema:</string>
+    <string name="tema_caliente_text">Tema de la opinión</string>
+    <string name="tema_apartado">Apartado:</string>
+    <string name="tema_apartado_text">Apartado de la opinión</string>
+    <string name="asunto">Asunto:</string>
+    <string name="cuerpo">Cuerpo del mensaje:</string>
+    <string name="confirmacion">Solicitar confirmación:</string>
+    <string name="mensajes">Mensajes:</string>
+
+    <string name="contacto_nombre">Nombre y apellidos:</string>
+    <string name="contacto_direccion">DIRECCIÓN</string>
+    <string name="contacto_calle">Calle/Edificio:</string>
+    <string name="contacto_no">No/Apto:</string>
+    <string name="contacto_reparto">Reparto:</string>
+    <string name="contacto_municipios">Municipio:</string>
+    <string name="contacto_entre">Entre:</string>
+    <string name="contacto_correo">Correo:</string>
+    <string name="contacto_nick">Alias:</string>
+    <string name="button_aceptar">ACEPTAR</string>
+    <string name="button_cancelar">CANCELAR</string>
+    <string name="contacto_title">Mi contacto</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string-array name="municipios">
+        <item>Santiago de Cuba</item>
+        <item>Contramaestre</item>
+        <item>Mella</item>
+        <item>San Luis</item>
+        <item>Segundo Frente</item>
+        <item>Songo - La Maya</item>
+        <item>Palma Soriano</item>
+        <item>Tercer Frente Oriental</item>
+        <item>Guamá</item>
+    </string-array>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="menu_nav_home">Navegar a Casa</string>
+    <string name="menu_sms_pos">SMS Posicion</string>
+    <string name="menu_goto_marker">Ir al Marcador</string>
+    <string name="btn_source">Fuente</string>
+    <string name="btn_target">Objetivo</string>
+    <string name="btn_route">Ruta</string>
+    <string name="tgl_car">carro</string>
+    <string name="tgl_bike">ciclo</string>
+    <string name="tgl_edit">editar</string>
+    <string name="tgl_navi">navegar</string>
+    <string name="tgl_pan">pan</string>
+    <string name="tgl_hold">hold</string>
+    <string name="tgl_tone">tone</string>
+    <string name="tgl_quiet">mute</string>
+    <string name="title_activity_logo">Troova</string>
+    <string name="hello_world">hola Mundo!</string>
+
+</resources>

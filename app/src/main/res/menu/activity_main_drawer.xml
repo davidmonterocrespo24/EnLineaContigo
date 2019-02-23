@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Configuración">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_manage"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:title="Mis datos" />
+                <item
+                    android:id="@+id/nav_config"
+                    android:icon="@drawable/ic_compare_arrows_black_24dp"
+                    android:title="Avanzada" />
+            </group>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/serv_drawer"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="Utilidades" />
+
+        <item
+            android:id="@+id/info_drawer"
+            android:icon="@drawable/ic_cached_black_24dp"
+            android:title="Actualizar" />
+    </group>
+
+    <item android:title="Información">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Enlaces" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send_black_menu_24dp"
+                android:title="Acerca de" />
+            <item
+                android:id="@+id/historia"
+                android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+                android:title="Programa en línea contigo" />
+
+        </menu>
+    </item>
+
+
+</menu>

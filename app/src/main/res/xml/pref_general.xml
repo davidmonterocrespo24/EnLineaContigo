@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="192.168.4.1"
+        android:inputType="textCapWords"
+        android:key="IpAdress"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Dirección IP:" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="dionis@uo.edu.cu"
+        android:inputType="textEmailAddress"
+        android:key="emailAdress"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Correo:" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="52886644"
+        android:inputType="number"
+        android:key="phoneNumber"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Número de teléfono:" />
+
+
+
+</PreferenceScreen>

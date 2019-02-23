@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/imagen_info_GridView"
+        android:columnWidth="300dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="25dp"
+        android:horizontalSpacing="25dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/emptyGallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text="Galería de imágenes vacía">
+    </TextView>
+</LinearLayout>

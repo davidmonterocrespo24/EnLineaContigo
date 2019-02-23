@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gcddm.contigo.BuzonesActivity">
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs"
+                />
+
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent" >
+
+                <LinearLayout android:id="@+id/tab1" android:layout_marginLeft="10dp"
+                    android:orientation="vertical" android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ordenar por:"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlue"
+                                android:textStyle="bold"
+                                android:layout_weight="1"/>
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fecha"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlue"
+                                android:textStyle="bold"
+                                android:id="@+id/tab1_checkBox1"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/tab1_text"
+                                android:layout_toEndOf="@+id/tab1_text"
+                                android:layout_weight="1"/>
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Contacto"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlue"
+                                android:textStyle="bold"
+                                android:id="@+id/tab1_checkBox2"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_toRightOf="@+id/tab1_checkBox1"
+                                android:layout_toEndOf="@+id/tab1_checkBox1"
+                                android:layout_weight="1"/>
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_buzones">
+
+                        <ImageButton android:id="@+id/tab1_text"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/buscar_50_copia"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/tab1_edit1"
+                            android:singleLine="true"
+                            android:hint="Buscar"
+                            android:maxLength="50"
+                            />
+
+                        <ImageButton
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0"
+                            android:id="@+id/tab1_button1"
+                            android:src="@drawable/ic_backspace_black_24dp"
+                            android:background="@android:color/transparent"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/emptyList0"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:textColor="#000000"
+                        android:text="No se encontraron mensajes">
+                    </TextView>
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lvLista0"
+                        android:textColor="#FFFFFF"
+                        android:transcriptMode="alwaysScroll"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/tab2" android:layout_marginLeft="10dp"
+                    android:orientation="vertical" android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ordenar por:"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorBlue"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fecha"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorBlue"
+                            android:textStyle="bold"
+                            android:id="@+id/tab2_checkBox1"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/tab2_text"
+                            android:layout_toEndOf="@+id/tab2_text"
+                            android:layout_weight="1"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contacto"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorBlue"
+                            android:textStyle="bold"
+                            android:id="@+id/tab2_checkBox2"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/tab2_checkBox1"
+                            android:layout_toEndOf="@+id/tab2_checkBox1"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_buzones">
+                        <ImageButton android:id="@+id/tab2_text"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/buscar_50_copia"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/tab2_edit2"
+                            android:singleLine="true"
+                            android:hint="Buscar"
+                            android:maxLength="50"
+                            />
+
+                        <ImageButton
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0"
+                            android:id="@+id/tab2_button2"
+                            android:src="@drawable/ic_backspace_black_24dp"
+                            android:background="@android:color/transparent"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/emptyList1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:textColor="#000000"
+                        android:text="No se encontraron mensajes">
+                    </TextView>
+
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lvLista1"
+                        android:textColor="#FFFFFF"
+                        android:transcriptMode="alwaysScroll"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/tab3" android:layout_marginLeft="10dp"
+                    android:orientation="vertical" android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ordenar por:"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorBlue"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fecha"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorBlue"
+                            android:textStyle="bold"
+                            android:id="@+id/tab3_checkBox1"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/tab1_text"
+                            android:layout_toEndOf="@+id/tab1_text"
+                            android:layout_weight="1"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contacto"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorBlue"
+                            android:textStyle="bold"
+                            android:id="@+id/tab3_checkBox2"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/tab1_checkBox1"
+                            android:layout_toEndOf="@+id/tab1_checkBox1"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_buzones">
+                        <ImageButton android:id="@+id/tab3_text"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/buscar_50_copia"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/tab3_edit3"
+                            android:singleLine="true"
+                            android:hint="Buscar"
+                            android:maxLength="50"
+                            />
+
+                        <ImageButton
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0"
+                            android:id="@+id/tab3_button3"
+                            android:src="@drawable/ic_backspace_black_24dp"
+                            android:background="@android:color/transparent"
+                            />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/emptyList2"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:textColor="#000000"
+                        android:text="No se encontraron mensajes">
+                    </TextView>
+
+
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lvLista2"
+                        android:textColor="#FFFFFF"
+                        android:transcriptMode="alwaysScroll"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</RelativeLayout>

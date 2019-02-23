@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginRight="10dp">
+
+        <com.gcddm.contigo.CircularImageView
+            android:layout_width="68dp" android:id="@+id/user_image"
+            android:layout_height="80dp" android:src="@drawable/usuario_m_copia"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:id="@+id/editText9"
+                android:maxLength="20"
+                android:hint="Escriba su alias"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alias:*"
+                android:id="@+id/textView16" android:textColor="#2980b9"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Nombre Apellido 1 Apellido 2"
+                android:id="@+id/editText3" android:maxLength="50"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre y Apellidos:*"
+                android:id="@+id/textView8" android:textColor="#2980b9"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+        android:layout_height="match_parent" android:orientation="vertical" android:layout_marginTop="5dp">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calle/Edificio:*"
+                    android:id="@+id/textView10" android:textColor="#2980b9"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Nombre de la calle o edificio"
+                    android:id="@+id/editText4" android:maxLength="50"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacto_no"
+                android:id="@+id/textView11" android:textColor="#2980b9"/>
+
+            <EditText
+                android:layout_width="56dp" android:hint="#"
+                android:layout_height="wrap_content" android:lines="1"
+                android:id="@+id/editText5" android:maxLength="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacto_entre"
+                android:id="@+id/textView12" android:textColor="#2980b9"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="calle y calle"
+                android:id="@+id/editText6" android:maxLength="50"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reparto:"
+                android:id="@+id/textView13" android:textColor="#2980b9"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del reparto"
+                android:id="@+id/editText7" android:maxLength="50"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacto_municipios" android:layout_gravity="center"
+                android:id="@+id/textView14" android:textColor="#2980b9"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner3"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_marginTop="5dp"
+            android:layout_width="match_parent" android:layout_gravity="center"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teléfono:*"
+                android:id="@+id/textView50"  android:layout_gravity="center" android:textColor="#2980b9"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:lines="1"
+                android:ems="10" android:inputType="number" android:hint="5#######"
+                android:id="@+id/editText10" android:maxLength="8"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:layout_height="wrap_content" android:showDividers="end" android:divider="@drawable/divider">
+            <TextView
+                android:layout_width="match_parent" android:textColor="#2980b9"
+                android:layout_height="wrap_content" android:text="Correo"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_marginTop="5dp"
+            android:layout_width="match_parent" android:layout_gravity="center"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacto_correo"
+                android:id="@+id/textView15"  android:layout_gravity="center" android:textColor="#2980b9"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" android:lines="1"
+                android:ems="10" android:maxLength="50"
+                android:id="@+id/editText8" android:hint="ejemplocorreo@nauta.cu"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="horizontal"
+            android:layout_height="wrap_content" android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña:"
+                android:id="@+id/textView19"  android:layout_gravity="center" android:textColor="#2980b9"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" android:lines="1"
+                android:ems="10" android:maxLength="30"
+                android:id="@+id/editText11" android:hint="********"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+ </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

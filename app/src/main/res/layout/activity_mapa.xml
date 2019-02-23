@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:orientation="horizontal" android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView6" android:layout_weight="0.1"
+            android:layout_gravity="right"
+            android:src="@android:drawable/ic_menu_search" />
+
+        <com.gcddm.contigo.Util.SearchableSpinner
+            android:id="@+id/spinner" android:layout_weight="0.9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+
+    </LinearLayout>
+
+    <org.mapsforge.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

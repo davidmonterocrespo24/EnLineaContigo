@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+    <CheckBox
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_check"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+
+
+    <ImageView
+        android:layout_width="35dp"
+        android:id="@+id/message_adjunto"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/alert_dark_frame"
+        android:layout_toLeftOf="@+id/message_body"
+        android:layout_alignBottom="@+id/message_body"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/message_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_above="@+id/message_body"
+        android:layout_toRightOf="@+id/message_check"
+        android:layout_toEndOf="@+id/message_check"
+        android:layout_alignStart="@+id/message_body"
+        android:layout_alignLeft="@+id/message_body"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_body"
+        android:text="dfgsgfdsfdsfdsfdsfdsasddasdasdasdasdasdasd\naddadasdadadasdasdasdasdasdasdasdasdasdasdasdasdasdas"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_corner"
+        android:layout_toEndOf="@+id/message_check"
+        android:layout_toRightOf="@+id/message_check"
+        android:layout_below="@+id/message_check" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="9/may 2017 8:23 am"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_above="@+id/message_body"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>
